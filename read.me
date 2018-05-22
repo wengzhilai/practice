@@ -11,3 +11,20 @@ pip install numpy
 pip install matplotlib
 
 
+
+
+
+图片文字识别：
+字库下载：https://github.com/tesseract-ocr/tessdata
+
+//安装tesseract的同时安装训练工具
+brew install --with-training-tools tesseract
+
+//安装tesseract的同时安装所有语言，语言包比较大，如果安装的话时间较长，建议不安装，按需选择
+brew install  --all-languages tesseract
+
+//安装tesseract，并安装训练工具和语言
+brew install --all-languages --with-training-tools tesseract 
+
+//只安装tesseract，不安装训练工具
+brew install  tesseract
